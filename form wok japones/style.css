@@ -1,0 +1,142 @@
+body {
+    background-image: url(img/templo-fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.enlace-portafolio {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    text-decoration: none;
+    position: fixed;
+    top: 25%;
+    right: 0.5%;
+}
+
+form {
+    width: 35%;
+    padding: 8px 30px 20px 30px;
+    margin: auto;
+    background-color: rgb(167, 26, 26);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    text-align: justify;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 60px;
+    height: 150px;
+}
+
+.logo {
+    background-image: url(img/logo-wok-sin-fondo.png);
+    width: 101px;
+    height: 100px;
+}
+
+.nombre-apellido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input, select {
+    padding: 8px;
+}
+
+.tel-email {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.direccion-cp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.salsas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.salsas label {
+    margin-left: -25px;
+}
+
+#raciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#raciones label {
+    margin-left: -20px;
+}
+
+textarea {
+    resize: none;
+    padding: 10px;
+}
+
+
+
+input[type=submit] {
+    background-color: green;
+    color: white;
+}
+
+input[type=submit]:hover {
+    opacity: 80%;
+}
+
+input[type=reset] {
+    background-color: red;
+    color: white;
+}
+
+input[type=reset]:hover {
+    width: 20%;
+}
+
+
+/* inputs invalidos */
+
+input[type=text]:invalid {
+    border: 2px solid red;
+}
+
+input[type=email]:invalid {
+    border: 2px solid red;
+}
+
+input[type=tel]:invalid {
+    border: 2px solid red;
+}
+
+
+/* Inputs validos */
+
+input[type=text]:valid {
+    border: 2px solid green;
+}
+
+input[type=email]:valid {
+    border: 2px solid green;
+}
+
+input[type=tel]:valid {
+    border: 2px solid green;
+}
+
+
+

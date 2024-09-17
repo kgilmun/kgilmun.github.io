@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+}
+
+.volver {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+    width: 5%;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+.volver:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+
+/* 1A SECCIÓN, L DEL TETRIS USANDO UN CONTENEDOR PARA LOS DIVS Y UN CONTENEDOR 'PADRE'*/
+#section1 {
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    position: relative;
+}
+#article1 {
+    /* DATOS GENERALES */
+    height: 81.4vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    align-content: center;
+    justify-content: flex-start;
+
+    /* DATOS DE ANIMACIÓN */
+    animation-name: tetris;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes tetris {
+    0% {transform: translateY(-1000px);}
+    100% {transform: translateY(0);}
+}
+
+div {
+    height: 120px;
+    width: 100px;
+    display: flex; 
+    justify-content: center;
+    align-content: center; 
+    font-size: 60px;
+    color: white;
+}
+
+.div1 {
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#div1-order {
+    order: 1;
+}
+
+.div2 {
+    background-color: rgb(103, 62, 62);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div3 {
+    background-color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div4 {
+    background-color: powderblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div5 {
+    background-color: plum;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div6 {
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* SECTION 2, L DEL TETRIS USANDO DOS CONTENEDORES PARA LOS DIVS Y UN CONTENEDOR 'PADRE' */
+#section2 {
+    height: 100vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    position: relative;
+}
+
+#article2 {
+    height: 600px;
+    font-size: 40px;
+    /* align-self: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    color: white;
+}
+
+#aside1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    margin: 0;
+}
+
+
+/* SECCIÓN 3, T INVERTIDA USANDO DOS CONTENEDORES PARA LOS DIVS Y UN CONTENEDOR 'PADRE'*/
+#section3 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    border: 1px solid black;
+    position: relative;
+}
+
+#aside3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+#article3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* SECCIÓN 4, T NORMAL. LO MISMO QUE EN LA SECCIÓN 3 PERO A LA INVERSA (MIRAR HTML)*/
+#section4 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+}
+
+#aside4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+#article4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

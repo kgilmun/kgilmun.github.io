@@ -1,0 +1,13 @@
+.a-volver {
+    position: fixed;
+    top: 20%;
+    right: 30%;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.a-volver:hover {
+    transform: scale(1.1);
+}

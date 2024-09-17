@@ -1,0 +1,424 @@
+body {
+    margin: 0;
+    background-color: rgba(240, 240, 240);
+}
+
+.div-vacio {
+    padding: 90px;
+}
+
+
+/* PORTADA PORTAFOLIO */
+#portada {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(video/fondo-portafolio-movil.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+h1 {
+    font-size: 55px;
+}
+
+
+/* MENÚ DE NAVEGACIÓN */
+nav {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(198, 198, 35);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.a-menu {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 30px;
+    padding: 0 30px;
+}
+
+.a-menu:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 10px white;
+}
+
+h2 {
+    text-align: center;
+    font-size: 26px;
+    border-bottom: 2px solid rgb(198, 198, 35);
+    padding: 15px 0;
+    width: 40%;
+    margin: auto;
+}
+
+
+
+/* SECCIÓN PERFIL */
+#section-perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#article-perfil {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+p {
+    font-size: 20px;
+}
+
+.p-perfil {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    padding: 5px 20px;
+    border-left: 1px solid rgb(198, 198, 35);
+    border-right: 1px solid rgb(198, 198, 35);
+    text-wrap: pretty;
+}
+
+.img-perfil {
+    background-image: url(img/foto\ curriculum.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    border: 2px solid rgb(198, 198, 35);
+    margin: auto;
+}
+
+h3 {
+    margin-top: 35px;
+    font-size: 22px;
+}
+
+/* tarjetas de los estudios que tengo */
+.estudios-oficiales {
+    background-color: rgb(198, 198, 35);
+    width: 275px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    text-wrap: wrap;
+    box-shadow: 5px 5px 20px 0 black;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+
+/* SECCIÓN PORTAFOLIO */
+#section-portafolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+    gap: 40px;
+}
+
+.p-portafolio {
+    text-align: justify;
+    width: 70%;
+    margin: auto;
+    padding: 0 20px;
+    margin-top: 40px;
+    border-left: 1px solid rgb(198, 198, 35);
+    border-right: 1px solid rgb(198, 198, 35);
+    text-wrap: pretty;
+}
+
+.div-portafolio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 275px;
+    background-color: black;
+    box-shadow: 0 0 20px 0 rgb(0, 0, 0);
+}
+
+.div-portafolio:hover {
+    opacity: 90%;
+}
+
+/* fondo de los divs del portafolio */
+#fondo-1a-pagina {
+    background-image: url(video/humo.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#fondo-flexbox-personaje {
+    background-image: url(video/galaxia.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#fondo-pieza-tetris {
+    background-image: url(video/tetris.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#fondo-record-guiness {
+    background-image: url(video/humo-saliendo-persona.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#fondo-form-wok {
+    background-image: url(video/fondo-wok.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.p-img {
+    color: white;
+    padding: 3px 7px;
+}
+
+.rutas-relativas {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+/* SECCIÓN OTROS DATOS */
+#section-otros-datos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.div-otros-datos {
+    background-color: wheat;
+    width: 275px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.div-otros-datos:hover {
+    transform: scale(1.1);
+}
+
+
+/* SECCIÓN DE CONTACTO */
+#footer-contacto {
+    color: white;
+    background-color: #45484a;
+    height: 60vh;
+    margin: 0;
+}
+
+.imagenes-contacto {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 20px;
+    width: 30%;
+    margin: auto;
+}
+
+img {
+    width: 30px;
+}
+
+.section-footer {
+    margin: auto;
+    width: 295px;
+}
+
+.a-footer {
+    color: white;
+}
+
+iframe {
+    display: none;
+}
+
+
+
+/* Pequeño ajuste en RESOLUCIÇON de TABLET para no descuadrar el texto del footer con el iframe de ubicación */
+
+@media screen and ((min-width: 600px) and (max-width: 752px)) {
+    .centrar-info-footer {
+        text-align: center;
+    }
+}
+
+/* MEDIA QUERIES PARA UNA TABLET */
+
+@media screen and (min-width: 600px) {
+    #portada {
+        background-image: url(video/portafolio-fondo.gif);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    nav {
+        flex-direction: row;
+        background-color: rgb(105, 212, 18);
+    }
+
+    .div-vacio {
+        padding: 45px;
+    }
+    
+    h2 {
+        border-bottom: 2px solid rgb(105, 212, 18);
+    }
+    
+    #article-perfil {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .h3-titulo {
+        margin-left: 30px;
+        vertical-align: top;
+    }
+
+    .img-perfil {
+        border: 2px solid rgb(105, 212, 18);
+        width: 300px;
+        height: 300px;
+    }
+
+    .p-perfil {
+        width: 75%;
+        border-left: 1px solid rgb(105, 212, 18);
+        border-right: 1px solid rgb(105, 212, 18);
+    }
+
+    .contenedor-estudios-oficiales {
+        display: flex;
+        flex-wrap: wrap;
+        width: 85%;
+        gap: 0 35px;
+    }
+
+    .estudios-oficiales {
+        flex-grow: 1;
+        background-color: rgba(105, 212, 18, 0.757);
+    }
+
+    .p-portafolio {
+        border-left: 1px solid rgb(105, 212, 18);
+        border-right: 1px solid rgb(105, 212, 18);
+    }
+
+    #section-portafolio {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px 20px;
+        width: 80%;
+        justify-content: center;
+        margin: auto;
+        margin-top: 60px;
+    }
+
+    #section-otros-datos {
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .p-ubicacion {
+        display: none;
+    }
+
+    #footer-contacto {
+        height: 83vh;
+    }
+
+    .section-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+        flex-wrap: wrap-reverse;
+    }
+
+    iframe {
+        display: flex;
+    }
+
+    .centrar-info-footer {
+        margin: auto;
+        padding: 5px;
+    }
+}
+
+
+
+/* MEDIA QUERIES PARA UN ORDENADOR */
+
+@media screen and (min-width: 1100px) {
+    nav {
+        flex-direction: row;
+        background-color: #48e;
+    }
+    
+    h2 {
+        border-bottom: 2px solid #48e;
+    }
+
+    #article-perfil {
+        width: 80%;
+        justify-content: center;
+        margin-left: -100px;
+    }
+
+    .img-perfil {
+        border: 2px solid #48e;
+
+    }
+    
+    .p-perfil {
+        border-left: 1px solid #48e;
+        border-right: 1px solid #48e;
+        width: 50%;
+    }
+    
+    .estudios-oficiales {
+        background-color: #48e;
+    }
+
+    .p-portafolio {
+        border-left: 1px solid #48e;
+        border-right: 1px solid #48e;
+    }
+
+    iframe {
+        width: 400px;
+        height: 250px;
+    }
+}

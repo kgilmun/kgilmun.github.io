@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="pagina2.html" method="get">
+
+        <header>
+            <div class="logo"></div>
+            <h1>WOK JAPO HE</h1>
+        </header>
+
+        <a href="../index.html#portafolio" class="enlace-portafolio">Volver al portafolio</a>
+
+        <article class="nombre-apellido">
+
+            <label for="nombre">*Nombre: </label>
+            <input type="text" id="nombre" name="nombre" placeholder="Antonio José" pattern="[a-z]{1,20}$" required> <!-- el símbolo del dolar significa que no distingue la mayúscula de la minúscula -->
+        
+
+            <label for="apellidos">*Apellidos: </label>
+            <input type="text" id="apellidos" name="apellidos" placeholder="Perez Vazquez" pattern="[A-Za-z]{1,30}" required>
+
+        </article>
+
+        <!-- Apartado de teléfono y email -->
+        <article class="tel-email">
+
+            <label for="telefono">*Telefono: </label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+34-123-456-789" pattern="\+[0-9]{2}-[0-9]{3}-[0-9]{3}-[0-9]{3}" required>
+
+            <label for="email">*Gmail: </label>
+            <input type="email" id="email" name="email" placeholder="ejemplo27@gmail.com" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required>
+        </article>
+
+        <article class="direccion-cp">
+            <label for="direccion">*Enviar a: </label>
+            <input type="text" id="direccion" name="direccion" placeholder="tu ubicación" required>
+
+            <label for="cp">*CP: </label>
+            <input type="tel" id="cp" name="cp" placeholder="04935" pattern="[0-9]{5}" required>
+
+        </article>
+
+        <!-- Complementos -->
+        <label for="complemento">Escoge complemento: </label>
+        <select name="complemento" id="complemento">
+            <option value="ninguno">Ninguno</option>
+            <option value="pollo">Pollo</option>
+            <option value="gambas">Gambas</option>
+            <option value="ternera">Ternera</option>
+            <option value="ramen">Ramen</option>
+        </select>
+
+
+        <!-- Salsas -->
+        <label for="salsas">Escoge tu salsa: </label>
+        <article class="salsas">
+            <input type="checkbox" name="salsa" id="ninguno" value="ninguno">
+            <label for="ninguno">Ninguna</label>
+
+            <input type="checkbox" name="salsa" id="soja" value="soja">
+            <label for="soja">Soja</label>
+
+            <input type="checkbox" name="salsa" id="agridulce" value="agridulce">
+            <label for="agridulce">Agridulce</label>
+            
+            <input type="checkbox" name="salsa" id="picante" value="picante">
+            <label for="picante">Picante</label>
+
+            <input type="checkbox" name="salsa" id="teriyaki" value="teriyaki">
+            <label for="teriyaki">Teriyaki</label>
+        </article>
+
+
+        <!-- Cuántas raciones -->
+        <label for="raciones">Escoge cuántas raciones: </label>
+
+        <article id="raciones">
+            <input type="radio" id="racion1" name="raciones" value="una-racion">
+            <label for="racion1">Una ración</label>
+
+            <input type="radio" id="racion2" name="raciones" value="dos-raciones">
+            <label for="racion2">Dos raciones</label>
+
+            <input type="radio" id="racion3" name="raciones" value="tres-raciones">
+            <label for="racion3">Tres raciones</label>
+
+            <input type="radio" id="racion4" name="raciones" value="cuatro-raciones">
+            <label for="racion4">Cuatro raciones</label>
+        </article>
+
+        <!-- Apartado de comentario -->
+        <label for="comentario">Déjanos tu comentario: </label>
+        <textarea name="comentario" id="comentario" placeholder="Alergias, intolerancias o especificaciones para el repartidor" max="300"></textarea>
+
+        <input type="submit">
+
+        <input type="reset" value="Borrar todo">
+    </form>
+</body>
+</html>
