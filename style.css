@@ -192,6 +192,12 @@ h4 {
     background-repeat: no-repeat;
 }
 
+#fondo-cohete {
+    background-image: url(video/fondo-cohete.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 
 .p-img {
     color: white;

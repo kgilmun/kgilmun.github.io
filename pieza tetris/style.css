@@ -29,7 +29,7 @@
 }
 #article1 {
     /* DATOS GENERALES */
-    height: 81.4vh;
+    height: 91vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap-reverse;
@@ -115,7 +115,7 @@ div {
 }
 
 #article2 {
-    height: 600px;
+    min-height: 600px;
     font-size: 40px;
     /* align-self: center; */
     display: flex;
