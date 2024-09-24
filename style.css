@@ -8,23 +8,6 @@ body {
 }
 
 
-/* PORTADA PORTAFOLIO */
-#portada {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-image: url(video/fondo-portafolio-movil.gif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-}
-
-h1 {
-    font-size: 55px;
-}
-
 
 /* MENÚ DE NAVEGACIÓN */
 nav {
@@ -52,7 +35,7 @@ nav {
     text-shadow: 0 0 10px white;
 }
 
-h2 {
+h2, h1 {
     text-align: center;
     font-size: 26px;
     border-bottom: 2px solid rgb(198, 198, 35);
@@ -281,11 +264,6 @@ iframe {
 /* MEDIA QUERIES PARA UNA TABLET */
 
 @media screen and (min-width: 600px) {
-    #portada {
-        background-image: url(video/portafolio-fondo.gif);
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
     
     nav {
         flex-direction: row;
@@ -301,7 +279,7 @@ iframe {
         padding: 45px;
     }
     
-    h2 {
+    h2, h1 {
         border-bottom: 2px solid rgb(105, 212, 18);
     }
     
@@ -401,7 +379,7 @@ iframe {
         font-size: 22px;
     }
     
-    h2 {
+    h2, h1 {
         border-bottom: 2px solid #48e;
     }
 
