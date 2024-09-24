@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cohete a la luna</title>
+</head>
+<body>
+
+    <main id="main">
+
+        <section id="boton-container">
+            <div class="boton" onclick="cambiarImagen()">LANZAR</div>
+        </section>
+
+        <img src="img/cohete-quieto-200px.png" id="cohete" onclick="parar()">
+    </main>
+
+
+    <div id="container-modal">
+        <div id="content-modal">
+            <h1 class="espacio">Viaje en cohete</h1>
+            <p class="espacio tamanio"><strong>Pulsa para saber la misión:</strong></p>
+            <p id="cerrar" onclick="cerrar()">X</p>
+            <button class="espacio" onclick="textoIntroduccion()">Adelante!!</button>
+            <p id="lore" class="tamanio"></p>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
