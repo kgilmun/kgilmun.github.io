@@ -181,6 +181,12 @@ h4 {
     background-repeat: no-repeat;
 }
 
+#rick-morty {
+    background-image: url(video/RickMorty.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 
 .p-img {
     color: white;
